@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta property="og:url" content="http://www.lenxapp.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Lenx" />
+        <meta property="og:image" content="http://www.lenxapp.com/images/lenx-logo.png" />
+        <meta property="og:description" content="Take long exposure photographs with your Android" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+        <meta http-equiv="cache-control" content="max-age=0" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+        <meta http-equiv="pragma" content="no-cache" />
+
+        <title>Lenx</title>
+        <link rel="shortcut icon" href="images/lenx-logo.png">
+
+        <!--Global JS files-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
+        <script type="text/javascript" src="js/skrollr.js"></script>
+        <script type="text/javascript" src="js/skrollr.menu.min.js"></script>
+        <script type="text/javascript" src="js/scrollspy.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <!--Polymer project components-->
+        <script src="polymer/components/platform/platform.js"></script>
+        <link rel="import" href="polymer/components/core-icons/core-icons.html">
+        <link rel="import" href="polymer/components/paper-ripple/paper-ripple.html">
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/devices.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
+
+    <body vlink="#515151" data-spy="scroll" data-target="#header-links">
+        <header>
+            <paper-ripple style="position: absolute;
+                        top:0px;
+                        left:0px;
+                        width:100%;
+                        height:86px;
+                        z-index:-1;">
+            </paper-ripple>
+            <div id="logo-with-text">
+                <img src="images/logo-with-text.png" style="width:140px;margin-top:-7px;"/>
+            </div>
+            <div id="header-links">
+                <ul>
+                  <li><a id="menu_download" data-menu-top="0" href="#download">DOWNLOAD</a></li>
+                  <li><a id="menu_contact" data-menu-top="690" href="#concept">CONCEPT</a></li>
+                  <li><a id="menu_team" data-menu-top="1390" href="#team">TEAM</a></li>
+                  <li><a id="menu_contact" data-menu-top="1990" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="container">
+            <div id="download">
+                <div style="width:100%;height:100%;background:rgba(0, 0, 0, 0.6);"></div>
+                <div style="font-family:Roboto Bold;font-size: 3rem;text-align: center;position: absolute; top:10rem;width:100%;">Lenx</div>
+                <div style="font-family:Roboto Light;font-size: 2.2rem;text-align: center;position: absolute; top:15rem;width:100%;">take long exposure photographs with your Android</div>
+                <div class="download-icon">
+                    <a style="width:100%;" target="_blank" href="https://play.google.com/store/apps/details?id=com.fenchtose.lenx">
+                      <img style="width:100%;" alt="Get it on Google Play"
+                           src="images/download-button.png" />
+                    </a>
+                </div>
+                <div style="position:absolute; bottom:0;height:4px;width:100%;background:#43d0ba;"></div>
+            </div>
+            <div id="concept">
+                <div style="font-family:Roboto Thin;font-size:3.5rem;text-align:center;position:absolute;top:4rem;width:100%;" >concept</div>
+
+                <div id="text-and-slideshow">
+                    <div id="slideshow-text">
+
+                    </div>
+                    <div id="slideshow">
+                        <div class="marvel-device nexus5 landscape">
+                            <div class="top-bar"></div>
+                            <div class="sleep"></div>
+                            <div class="volume"></div>
+                            <div class="camera"></div>
+                            <div class="screen" id="screen" style="z-index:0;">
+                                <img id="slideshow-image" src="images/screenshots/zoom.png" style="width:100%;"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <div id="bubble0" class="inactive-bubble" slide-index="0"></div>
+                    <div id="bubble1" class="inactive-bubble" slide-index="1"></div>
+                    <div id="bubble2" class="inactive-bubble" slide-index="2"></div>
+                    <div id="bubble3" class="inactive-bubble" slide-index="3"></div>
+                    <div id="bubble4" class="inactive-bubble" slide-index="4"></div>
+                    <div id="bubble5" class="inactive-bubble" slide-index="5"></div>
+                </div>
+
+                <div style="position:absolute; bottom:0;height:4px;width:100%;background:#43d0ba;"></div>
+            </div>
+            <div id="team">
+                <div style="font-family:Roboto Thin;font-size:3.5rem;text-align:center;position:absolute;top:4rem;width:100%;" >team</div>
+                <div id="portraits">
+                    <div style="display: inline-block; margin-right: 20px;">
+                        <img src="images/jay.png" style="width:200px;"/><br/>
+                        <p class="dev-name">Jay Rambhia</p>
+                        <p class="dev-role">Lead Developer</p>
+                    </div>
+                    <div style="display: inline-block; margin-right: 20px;">
+                        <img src="images/sud.png" style="width:200px;"/><br/>
+                        <p class="dev-name">Sudhanshu Mishra</p>
+                        <p class="dev-role">Android Developer</p>
+                    </div>
+                    <div style="display: inline-block; margin-right: 20px;">
+                        <img src="images/rumana.png" style="width:200px;"/><br/>
+                        <p class="dev-name">Rumana Lakdawala</p>
+                        <p class="dev-role">Designer</p>
+                    </div>
+                    <div style="display: inline-block;">
+                        <img src="images/varad.png" style="width:200px;"/><br/>
+                        <p class="dev-name">Varad Gunjal</p>
+                        <p class="dev-role">Concept Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <div class="contact-us-head">Contact Us</div>
+                <div class="contact-us-subhead">We'd love to hear from you!</div>
+                <div id="contacts">
+                    <div id="social-icons">
+                        <a target="_blank" class="icon-mail" style="display:inline-block;margin-right:20px;" href="mailto:contact@lenxapp.com"><img src="images/mail.png" /></a>
+                        <a target="_blank" class="icon-fb" style="display:inline-block;margin-right:20px;" href="https://www.facebook.com/fenchtose.lenx"><img src="images/facebook.png" /></a>
+                        <a target="_blank" class="icon-twitter" style="display:inline-block;" href="https://twitter.com/Fenchtose"><img src="images/twitter.png" /></a>
+                    </div>
+                    <img src="images/nexus5.png" style="width:450px;" />
+                </div>
+                <div id="mobile-social-icons">
+                    <a target="_blank" class="icon-mail" style="display:inline-block;margin-right:20px;" href="mailto:contact@lenxapp.com"><img src="images/mail.png" /></a>
+                    <a target="_blank" class="icon-fb" style="display:inline-block;margin-right:20px;" href="https://www.facebook.com/fenchtose.lenx"><img src="images/facebook.png" /></a>
+                    <a target="_blank" class="icon-twitter" style="display:inline-block;" href="https://twitter.com/Fenchtose"><img src="images/twitter.png" /></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </body>
+</html>
