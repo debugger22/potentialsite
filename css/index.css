@@ -130,7 +130,7 @@ header{
     }
 }
 
-#concept{
+#how-does-it-work{
     position: relative;
     background: #eeeeee;
     height: 700px;
@@ -195,7 +195,7 @@ header{
 
 @media screen and (max-width:850px){
 
-    #concept{
+    #how-does-it-work{
         height:400px;
     }
 
